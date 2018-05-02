@@ -19,7 +19,8 @@ from learn import views as learn_views
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path('',include('blog.urls'))
+    path('',include('blog.urls')),
+    path('',include('comments.urls')),
  #   path('index/',learn_views.index,name='index'),
   #  path('langlist/',learn_views.languageList),
    # path('sequences/',learn_views.sequences),
